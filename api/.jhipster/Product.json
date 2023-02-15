@@ -1,0 +1,57 @@
+{
+  "applications": "*",
+  "changelogDate": "20220616190346",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "product",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "image",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tva",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "tvaTakeAway",
+      "fieldType": "Double"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Product",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "ingredient",
+      "otherEntityRelationshipName": "product",
+      "ownerSide": true,
+      "relationshipName": "ingredient",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "categorie",
+      "otherEntityRelationshipName": "product",
+      "ownerSide": false,
+      "relationshipName": "categorie",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}
